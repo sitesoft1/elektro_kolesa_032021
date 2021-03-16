@@ -606,6 +606,11 @@ header {
 	color: #71be00;
 }
 
+.brand-list > .brand-item > div{
+    color:#333333;
+    font-weight: bold;
+}
+
 .oct-menu-li:hover > a,
 .oct-menu-li:hover > div > a {
 	color: #71be00;
@@ -1200,6 +1205,12 @@ header {
 	line-height: 33px;
 	margin-bottom: 30px;
 	position: relative;
+}
+
+.us-main-shop-title h4{
+    color: #30363D !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
 }
 
 .us-main-shop-title:after {
@@ -3422,10 +3433,66 @@ span.us-product-info-is {
 	border-color: #71be00;
 }
 
+    /* h2, h3 tabs */
+    .us-product-nav-item h2 {
+        color: #666;
+        font-size: 16px;
+        text-decoration: underline;
+        transition: all .15s ease;
+        cursor:pointer;
+    }
+
+    .us-product-nav-item h2:hover {
+        color: #333;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .us-product-nav-item-active h2,
+    .us-product-nav-item-active h2:hover {
+        color: #333;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .us-product-nav-item h2:after {
+        content: '';
+        border-bottom: 3px solid transparent;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        transition: border .15s ease;
+
+    }
+
+    .us-product-nav-item-active h2:after,
+    .us-product-nav-item h2:hover:after {
+        border-color: #71be00;
+    }
+
+    .us-product-description-cont h3{
+        margin-bottom: 6px;
+    }
+
+    #us-related-dop_tab-row h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .us-page-main-title h2{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    /* h2, h3 tabs END */
+
 .us-product-description-cont {
     color: #898989;
 	padding: 0 30px 30px;
 }
+
+
 
 #us-related-dop_tab-row {
 	padding-top: 30px;
@@ -7515,6 +7582,10 @@ span.simple-step-delimiter:before {
         text-decoration: underline !important;
     }
 
+    .us-product-description-nav h2, h3, h4{
+        font-weight: 600 !important;
+        font-size: 14px !important;
+    }
 
 
 

@@ -242,22 +242,16 @@
                                             {% set count = 1  %}
                                             {% for child in children %}
                                                 <li class="brand-item">
-                                                    {% if child.href == constant('ALL_REQUEST_URI') %}
+                                                    <a class="brand-item-link" href="{{ child.href }}">
                                                         {% if child.thumb %}
                                                             <img src="{{ child.thumb }}"{% if oct_lazyload %} data-srcset="{{ child.thumb }} 100w" srcset="{{ oct_lazy_image }} 100w" sizes="100vw"{% endif %} alt="{{ child.name }}" title="{{ child.name }}" class="oct-mm-parent-img oct-mm-img-transition{% if oct_lazyload %} oct-lazy{% endif %}" />
                                                         {% endif %}
-                                                        <div class="brand-item-link-div-{{ count }}">{{ child.name }}</div>
-                                                    {% else %}
-                                                        <a class="brand-item-link" href="{{ child.href }}">
-                                                            {% if child.thumb %}
-                                                                <img src="{{ child.thumb }}"{% if oct_lazyload %} data-srcset="{{ child.thumb }} 100w" srcset="{{ oct_lazy_image }} 100w" sizes="100vw"{% endif %} alt="{{ child.name }}" title="{{ child.name }}" class="oct-mm-parent-img oct-mm-img-transition{% if oct_lazyload %} oct-lazy{% endif %}" />
-                                                            {% endif %}
-                                                            <div class="brand-item-link-div-{{ count }}">{{ child.name }}</div>
-                                                        </a>
-                                                    {% endif %}
+                                                       <div class="brand-item-link-div-{{ count }}">{{ child.name }}</div>
+                                                    </a>
                                                 </li>
                                                 {% set count = count+1 %}
                                             {% endfor %}
+
                                             <li class="brand-item">&nbsp;</li>
                                         {% endfor %}
                                 </ul>
