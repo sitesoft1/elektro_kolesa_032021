@@ -438,7 +438,7 @@
 				{% endif %}
 				{% if attribute_groups %}
 				<div id="us-product-attributes" class="us-product-attributes">
-					{% if description %}<div class="us-page-main-title">{{ oct_product_attributes_tab }}</div>{% endif %}
+                    {% if description %}<div class="us-page-main-title"><h2>{{ oct_product_attributes_tab }} на товар {{ heading_title }}</h2></div>{% endif %}
 					{% for attribute_group in attribute_groups %}
 					<div class="us-product-attributes-cont">
 						<div class="us-product-attributes-title">{{ attribute_group.name }}</div>
